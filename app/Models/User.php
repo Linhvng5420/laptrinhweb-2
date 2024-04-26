@@ -62,6 +62,6 @@ class User extends Authenticatable
     //Thêm quan hệ favorites vào model User:
     public function favorites()
     {
-        return $this->belongsToMany(Favorities::class, 'user_favorite', 'user_id', 'favorite_id');
+        return $this->belongsToMany(Favorities::class, 'user_favorite', 'favorite_id', 'user_id');
     }
 }
