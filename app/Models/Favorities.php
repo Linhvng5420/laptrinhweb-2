@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Favorities extends Model
 {
     use HasFactory;
+
+    // định nghĩa mối quan hệ đảo ngược
+    public function users()
+    {
+        return $this->belongsToMany(User::class, 'user_favorite', 'favorite_id', 'user_id');
+    }
 }
