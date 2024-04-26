@@ -9,6 +9,8 @@ class Favorities extends Model
 {
     use HasFactory;
 
+    protected $primaryKey = 'favorite_id';
+
     // định nghĩa mối quan hệ đảo ngược
     public function users()
     {
