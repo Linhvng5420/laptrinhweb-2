@@ -9,6 +9,11 @@
 
 **<p align="center"> CÂU LỆNH LARAVEL ARTISAN CƠ BẢN: </p>**
 
+### **Cài đặt Laravel Sanctum**
+```bash
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+```
+
 ### **1. Hiển thị phiên bản Laravel:**
 
 ```bash
